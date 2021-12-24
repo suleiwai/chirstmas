@@ -1,14 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background: url("./images/night.jpeg") no-repeat bottom center/cover;
   height: 100vh;
   width: 100%;
-  margin: 0;
-}
-@media screen and (max-width: 425px) {
-  body {
-    height: 100%;
-    width: 100%;
-  }
+  overflow: hidden;
 }
 .santa-claus {
   position: absolute;
@@ -219,9 +218,6 @@ body {
     left: 0px;
   }
 }
-p {
-  color: blue;
-}
 @media screen and (max-width: 425px) {
   .crystal2 {
     left: 30px;
@@ -270,9 +266,15 @@ p {
 } */
 .text {
   position: absolute;
-  bottom: 250px;
+  top: 50%;
   text-align: center;
-  transform: translateX(420px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 900px) {
+  .text {
+    width: 100%;
+  }
 }
 .xmas-txt {
   font-size: 40px;
@@ -283,22 +285,12 @@ p {
 }
 .xmas {
   font-size: 50px;
+  margin-bottom: 20px;
 }
-@media screen and (max-width: 1240px) {
-  .text {
-    transform: translateX(300px);
-  }
-  .xmas-txt {
-    margin-bottom: 10px;
-  }
+.click {
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 1024px) {
-  .text {
-    transform: translateX(250px);
-  }
-  .xmas-txt {
-    margin-bottom: 10px;
-  }
   .xmas-txt {
     font-size: 30px;
   }
@@ -307,12 +299,6 @@ p {
   }
 }
 @media screen and (max-width: 768px) {
-  .text {
-    transform: translateX(200px);
-  }
-  .xmas-txt {
-    margin-bottom: 0px;
-  }
   .xmas-txt {
     font-size: 20px;
   }
@@ -321,12 +307,6 @@ p {
   }
 }
 @media screen and (max-width: 425px) {
-  .text {
-    transform: translateX(80px);
-  }
-  .xmas-txt {
-    margin-bottom: 0px;
-  }
   .xmas-txt {
     font-size: 20px;
   }
@@ -334,21 +314,21 @@ p {
     font-size: 30px;
   }
 }
-.messagebox {
-  position: absolute;
-  left: 45%;
-  bottom: 100px;
-  border-radius: 50px;
-}
 .oval {
+  position: absolute;
+  left: 50%;
   width: 150px;
   height: 15px;
+  text-align: center;
   border-radius: 50%;
+  transform: translateX(-50%);
   background-color: rgba(95, 95, 95, 0.5);
 }
 .box {
   width: 150px;
-  animation: shake 1s infinite alternate;
+}
+.messagebox {
+  margin-bottom: 40px;
 }
 @keyframes shake {
   from {
@@ -373,28 +353,6 @@ p {
   .oval {
     width: 90px;
     height: 12px;
-  }
-  .messagebox {
-    position: absolute;
-    left: 50%;
-    bottom: 100px;
-    border-radius: 50px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .messagebox {
-    position: absolute;
-    left: 45%;
-    bottom: 100px;
-    border-radius: 50px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .messagebox {
-    position: absolute;
-    left: 43%;
-    bottom: 100px;
-    border-radius: 50px;
   }
 }
 .star {
@@ -426,9 +384,6 @@ p {
   }
 }
 .xmas-audio {
-  position: absolute;
-  bottom: 30px;
-  left: 39%;
   opacity: 0.7;
   height: 30px;
 }
