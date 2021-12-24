@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xmas Text Card</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      width: 100%;
+      /* background: linear-gradient(#000046, #1cb5e0); */
+      background: url("../images/night.jpeg") no-repeat bottom center/cover;
+      height: 100vh;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    .card {
+      background: linear-gradient(#f7797d 10%, #fbd786);
+      width: 300px;
+      box-shadow: 2px 2px 4px 3px rgba(223, 57, 127, 0.5),
+        -2px -2px 4px 3px rgba(223, 57, 127, 0.5);
+      padding: 20px 20px;
+      border-radius: 2.5px;
+    }
+    h3 {
+      color: white;
+      font-size: 50px;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      margin: 0px;
+    }
+    p {
+      color: white;
+      font-size: 17px;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      padding: 10px 0px;
+    }
+    .btn {
+      border: none;
+      padding: 10px 15px;
+      background-color: #ff44c7;
+      font-size: 17px;
+      border-radius: 10px;
+      transform: translateX(200px);
+      color: white;
+      font-family: "Roboto", sans-serif;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h3>Merry Christmas!</h3>
+        <p>
+          May you be happy and have a sweet time during this Christmas. We all
+          have a difficult time, but our 2022 is waiting for us! Let's run
+          through the coming whole year with strong power and happiness! I LOVE
+          YOU SO MUCH!
+        </p>
+        <button onclick="location.href='index.html'" class="btn">Back</button>
+      </div>
+    </div>
+  </body>
+</html>

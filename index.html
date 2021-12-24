@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="christmas.css" />
+    <title>Christmas Animation</title>
+  </head>
+  <body>
+    <div class="santa">
+      <img src="./images/santa.png" class="santa-claus" alt="" />
+    </div>
+    <div class="snow-container">
+      <div class="snowing one">
+        <img src="./images/snow.png" class="crystal1" alt="" />
+        <img src="./images/snow.png" class="crystal1" alt="" />
+        <img src="./images/snow.png" class="crystal2" alt="" />
+        <img src="./images/snow.png" class="crystal2" alt="" />
+      </div>
+      <div class="snowing two">
+        <img src="./images/snow.png" class="crystal1" alt="" />
+        <img src="./images/snow.png" class="crystal1" alt="" />
+        <img src="./images/snow.png" class="crystal2" alt="" />
+        <img src="./images/snow.png" class="crystal2" alt="" />
+      </div>
+      <div class="snowing three">
+        <img src="./images/snow.png" class="crystal1" alt="" />
+        <img src="./images/snow.png" class="crystal1" alt="" />
+        <img src="./images/snow.png" class="crystal2" alt="" />
+        <img src="./images/snow.png" class="crystal2" alt="" />
+      </div>
+      <div class="snowing four">
+        <img src="./images/snow.png" class="crystal1" alt="" />
+        <img src="./images/snow.png" class="crystal1" alt="" />
+        <img src="./images/snow.png" class="crystal2" alt="" />
+        <img src="./images/snow.png" class="crystal2" alt="" />
+      </div>
+      <div class="snowing five">
+        <img src="./images/snow.png" class="crystal1" alt="" />
+        <img src="./images/snow.png" class="crystal1" alt="" />
+        <img src="./images/snow.png" class="crystal2" alt="" />
+        <img src="./images/snow.png" class="crystal2" alt="" />
+      </div>
+      <div class="snowing six">
+        <img src="./images/snow.png" class="crystal1" alt="" />
+        <img src="./images/snow.png" class="crystal1" alt="" />
+        <img src="./images/snow.png" class="crystal2" alt="" />
+        <img src="./images/snow.png" class="crystal2" alt="" />
+      </div>
+      <div class="snowing seven">
+        <img src="./images/snow.png" class="crystal1" alt="" />
+        <img src="./images/snow.png" class="crystal1" alt="" />
+        <img src="./images/snow.png" class="crystal2" alt="" />
+        <img src="./images/snow.png" class="crystal2" alt="" />
+      </div>
+    </div>
+    <div class="text">
+      <p class="xmas-txt xmas">Merry Christmas to you all!</p>
+      <p class="xmas-txt">Click the Present Box!</p>
+    </div>
+    <div class="messagebox">
+      <img src="./images/present.png" class="box" id="present" alt="" />
+      <div class="oval"></div>
+    </div>
+    <audio
+      src="./audio/Merry-Christmas.mp3"
+      loop
+      autoplay
+      id="my-audio"
+      class="xmas-audio"
+      controls
+    ></audio>
+    <div class="star">
+      <img src="./images/star.png" class="xmas-star" alt="" />
+    </div>
+    <!-- <script>
+      let christmasCard;
+      let title = "Merry Christmas!";
+      let cardTxt = `May you be happy and have a sweet time during this Christmas. We all have a difficult time, but
+          our 2022 is waiting for us! Let's run through the coming whole year with strong power and happiness! I LOVE YOU SO MUCH!`;
+      christmasCard = `
+      <div style="width:100%; height:100vh; background: linear-gradient(#000046,#1cb5e0); margin:0; padding:0;">
+        <div style = "background:linear-gradient( #f7797d 10%,#fbd786); width:300px; height:400px; 
+        box-shadow:2px 2px 4px 3px rgba(223,57,127,0.5), -2px -2px 4px 3px rgba(223,57,127,0.5); padding: 20px 20px; 
+        border-radius:2.5px; margin:auto; transform:translateY(70px);" class="card">
+          <h3 style = "color:white; font-size: 50px; text-align:center;font-family: 'Gwendolyn', cursive;
+          margin: 10px 0px;">${title}</h3>
+          <p style = "color:white; font-size: 20px; text-align:center; font-family: 'Gwendolyn', cursive;">${cardTxt}</p>
+        </div>
+      </div>
+      `;
+    </script> -->
+    <script type="text/javascript">
+      document.getElementById("present").onclick = function () {
+        location.href = "text.html";
+      };
+    </script>
+  </body>
+</html>
